@@ -1,0 +1,77 @@
+body {
+    background-image: url("https://raw.githubusercontent.com/SagarDhandare/Liver-Disease-Prediction-Project/main/Images/Liver.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-heading {
+    margin: 0;
+}
+
+.heading_font {
+    color: black;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+#first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eight, #ninth {
+    border-radius: 14px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#first {
+    width: 150px;
+}
+
+#second {
+    width: 220px;
+}
+
+#third {
+    width: 180px;
+}
+
+#fourth {
+    width: 250px;
+}
+
+#fifth {
+    width: 270px;
+}
+
+#sixth {
+    width: 280px;
+}
+
+#seventh {
+    width: 170px;
+}
+
+#eight {
+    width: 150px;
+}
+
+#ninth {
+    width: 280px;
+}
+
+#sub {
+    width: 120px;
+    height: 43px;
+    text-align: center;
+    border-radius: 14px;
+    font-size: 18px;
+}

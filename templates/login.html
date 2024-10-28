@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/logincss.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <!-- The video half -->
+            <div class="col-md-6 d-none d-md-flex bg-video">
+                <div class="text-white p-5">
+                    <h2>Liver Tumor Segmentation<br> Sign Up/Login</h2>
+                    <p>Login or register from here to access.</p>
+                    <video class="img-fluid" autoplay muted loop>
+                        <source src="/static/images/bad liver disease symptoms liver failure 3d anatomy x-ray ultrasound 21922499 Stock Video at Vecteezy.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <!-- The content half -->
+            <div class="col-md-6 bg-light">
+                <div class="login d-flex align-items-center py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 col-xl-7 mx-auto">
+                                <h3 class="display-4">Login</h3>
+                                <p class="text-muted mb-4">Enter your username and password to log in.</p>
+                                <!-- In case LogIn fails -->
+                                {% if error == "" %}
+                                {% else %}
+                                <div class="alert alert-danger" role="alert">
+                                    {{error}}
+                                </div>
+                                {% endif %}
+                                <!-- Login Form -->
+                                <form action="/" method="POST">
+                                    <div class="form-group mb-3">
+                                        <input type="text" class="form-control rounded-pill border-0 shadow-sm px-4"
+                                            placeholder="Username" name="username" required>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="password" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary"
+                                            placeholder="Password" name="password" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Login</button>
+                                    <div class="text-center">
+                                        <p>New user? Sign up <a href="http://127.0.0.1:5000/signup">here</a>.</p>
+                                        <p>For quick access, scan your MRI directly <a href="http://127.0.0.1:5000/mainPage">here</a>.</p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
