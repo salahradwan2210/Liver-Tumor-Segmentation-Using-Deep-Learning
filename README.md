@@ -9,22 +9,22 @@ This project aims to develop an automatic, efficient, and reliable technique for
 ## Project Screenshots
 
 ### Nii Image
-![Nii](uploads/Nii.png)
+![Nii](results/Nii.png)
 
 ### Result Image
-![Result](uploads/result.png)
+![Result](results/result.png)
 
 ### Report Image
-![Report](uploads/report.png)
+![Report](results/report.png)
 
 ### Fill Report Image
-![Fill Report](uploads/fill%20report.png)
+![Fill Report](results/fill%20report.png)
 
 ### Home Page
-![Home](uploads/home.png)
+![Home](results/home.png)
 
 ### Login Page
-![Login](uploads/Login.png)
+![Login](results/Login.png)
 
 ---
 
